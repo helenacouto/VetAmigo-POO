@@ -8,6 +8,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # As classes ficam numa biblioteca; o programa só liga nela
 add_library(vetamigo_lib STATIC
     src/animal.cpp
+    src/cachorro.cpp
+    src/gato.cpp
+    src/coelho.cpp
 )
 target_include_directories(vetamigo_lib PUBLIC include)
 
