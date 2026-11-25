@@ -11,6 +11,7 @@ add_library(vetamigo_lib STATIC
     src/cachorro.cpp
     src/gato.cpp
     src/coelho.cpp
+    src/clinica.cpp
 )
 target_include_directories(vetamigo_lib PUBLIC include)
 
