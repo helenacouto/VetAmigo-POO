@@ -19,3 +19,4 @@ A `Clinica` é dona dos animais: eles ficam em `std::unique_ptr<Animal>` dentro 
 O `operator<<` é livre porque o operando da esquerda é o `ostream`, que não é uma classe minha, então não tenho como acrescentar um membro nele. O `operator+=` é membro porque o operando da esquerda é a própria `Clinica`, que é quem muda quando um paciente é cadastrado, e ele devolve `Clinica&`, como o `+=` embutido faz.
 
 ## Uso de assistente de IA
+Usei o Claude (Sonnet 5.5) como guia do projeto: ele escreveu rascunhos da estrutura geral do projeto, do README e do DECISAO.md e tirou minhas dúvidas, e eu revisei e testei tudo com `make verifica`. O único erro que identifiquei foi uma contagem na explicação dele, que citou 13 asserções no `contrato.hpp` quando são 12, sem nenhum efeito no código.
